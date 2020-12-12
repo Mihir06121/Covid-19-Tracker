@@ -18,7 +18,7 @@ const Cards = ({data}) => {
     return(
         <div align="center">
             <Grid container spacing={3} justify="space-evenly" className={cx(styles.container)}>
-                <Grid item xs={5} md={2} component={Card} justify="center" className={cx(styles.confirmed, styles.card)} data-aos={"fade-up"}>
+                <Grid item xs={8} md={5} component={Card} justify="center" className={cx(styles.confirmed, styles.card)} data-aos={"fade-up"}>
                     <CardContent>
                         <Typography variant="h6" color="textSecondary" gutterBottom>Confirmed</Typography>
                         <Typography variant="h4" component="h1">
@@ -29,12 +29,9 @@ const Cards = ({data}) => {
                                 separator=","
                             />
                             </Typography>
-                        <Typography variant="body2" component="p">
-                            Number of Confirmed cases
-                        </Typography>
                     </CardContent>
                 </Grid>
-                <Grid item xs={5} md={2} component={Card} className={cx(styles.active, styles.card)} data-aos={"fade-up"} data-aos-delay={"200"}>
+                <Grid item xs={8} md={5} component={Card} className={cx(styles.active, styles.card)} data-aos={"fade-up"} data-aos-delay={"200"}>
                     <CardContent>
                         <Typography variant="h6" color="textSecondary" gutterBottom>Active</Typography>
                         <Typography variant="h4" component="h2">
@@ -44,12 +41,9 @@ const Cards = ({data}) => {
                                 duration={2.5}
                                 separator=","
                             /></Typography>
-                        <Typography variant="body2" component="p">
-                            Number of Active cases
-                        </Typography>
                     </CardContent>
                 </Grid>
-                <Grid item xs={5} md={2} component={Card} className={cx(styles.recovered, styles.card)} data-aos={"fade-up"} data-aos-delay={"300"}>
+                <Grid item xs={8} md={5} component={Card} className={cx(styles.recovered, styles.card)} data-aos={"fade-up"} data-aos-delay={"300"}>
                     <CardContent>
                         <Typography variant="h6" color="textSecondary" gutterBottom>Recovered</Typography>
                         <Typography variant="h4" component="h2">
@@ -60,12 +54,9 @@ const Cards = ({data}) => {
                                 separator=","
                             />
                             </Typography>
-                        <Typography variant="body2" component="p">
-                            Number of Recovered Cases
-                        </Typography>
                     </CardContent>
                 </Grid>
-                <Grid item xs={5} md={2} component={Card} className={cx(styles.deaths, styles.card)} data-aos={"fade-up"} data-aos-delay={"400"}>
+                <Grid item xs={8} md={5} component={Card} className={cx(styles.deaths, styles.card)} data-aos={"fade-up"} data-aos-delay={"400"}>
                     <CardContent>
                         <Typography variant="h6" color="textSecondary" gutterBottom>Deaths</Typography>
                         <Typography variant="h4" component="h2">
@@ -75,9 +66,6 @@ const Cards = ({data}) => {
                                 duration={2.5}
                                 separator=","
                             /></Typography>
-                        <Typography variant="body2" component="p">
-                            Number of Death cases
-                        </Typography>
                     </CardContent>
                 </Grid>
             </Grid>

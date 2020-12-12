@@ -2,6 +2,7 @@
     width: 100%;
     margin: 25px 0;
     justify-content: space-around;
+    background-color: black;
 }
 
 .card {
@@ -12,17 +13,17 @@
 }
 
 .confirmed {
-    border-bottom: 10px solid rgb(255,106,136);
+    border: 10px solid rgb(255,106,136);
 }
 
 .active {
-    border-bottom: 10px solid rgb(112,180,255);
+    border: 10px solid rgb(112,180,255);
 }
 
 .recovered {
-    border-bottom: 10px solid rgb(126,202,143);
+    border: 10px solid rgb(126,202,143);
 }
 
 .deaths {
-    border-bottom: 10px solid rgb(183,187,191);
+    border: 10px solid rgb(183,187,191);
 }
